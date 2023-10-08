@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(./OpenSans-Italic-VariableFont_wdth\wght.ttf);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: OpenSans;
+	scroll-margin-top: 60px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(234, 0, 255, 0.322);
+}
+
+/* Nawigacja */
+
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 10;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nav-items {
+	display: none;
+}
+
+/* Header */
+
+.header {
+	position: relative;
+	background-image: url(../JPG/Hero-Image\ Small.png);
+	height: 330px;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-text {
+	position: absolute;
+	color: rgba(85, 4, 81, 0.925);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #00000060;
+}
+.hero-text span {
+	text-transform: uppercase;
+}
+
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section {
+	scroll-margin-top: 80px;
+}
+
+/* Main */
+
+main {
+	margin: 60px 0;
+}
+
+/* About game */
+
+.about-game-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+/* Cechy gry */
+
+.cechy-gry {
+	margin: 60px auto;
+}
+
+.cechy-gryw {
+	position: relative;
+	height: 300px;
+	font-size: 16px;
+	background-size: cover;
+	background-position: center;
+}
+
+.cechy-gryw:hover h3 {
+	transform: scale(1.6);
+}
+
+.cechy-gryw h3 {
+	transition: transform 0.3s;
+}
+.cechy-gry1 {
+	background-image: url(../JPG/nintendo-5966516_640.jpg);
+	background-size: cover;
+}
+
+.cechy-gry2 {
+	background-image: url(../JPG/sword-1058402_640.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.cechy-gry3 {
+	background-image: url(../JPG/knight-321443_640.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.cechy-gry3 h3 {
+	color: white;
+}
+
+.cechy-gry4 {
+	background-image: url(../JPG/startup-594090_640.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.cechy-gry4 h3 {
+	color: white;
+}
+
+/* Kontakt */
+
+.content {
+	text-align: center;
+}
+
+.content h3 {
+	text-transform: uppercase;
+	margin: 20px 0 5px;
+}
+
+/* Kontak koniec */
+
+/* Footer */
+
+footer {
+	text-align: center;
+	padding: 30px 20px;
+	background-color: #ddd;
+}
+
+/* Media Queries trzymamy na samym dole */
+
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+		color: black;
+		transition: 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: rgb(227, 12, 235);
+	}
+
+	.header {
+		background-image: url(../JPG/Hero\ Image-Big.png);
+		height: 400px;
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+
+	.hero-text p {
+		font-size: 18px;
+	}
+}
+
+.cechy-gryw h3 {
+	font-size: 24px;
+}
+
+@media (min-width: 992px) {
+	.cechy-gryw-box {
+		font-size: 0;
+	}
+
+	.cechy-gryw {
+		display: inline-block;
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
+
+	.hero-text p {
+		font-size: 20px;
+	}
+}
